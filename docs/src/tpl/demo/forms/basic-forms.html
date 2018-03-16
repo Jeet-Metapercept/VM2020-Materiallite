@@ -1,0 +1,494 @@
+<section class="text-fields">
+  <div class="mdl-color--amber ml-header relative clear">
+    <div class="p-20">
+      <h3 class="mdl-color-text--white m-t-20 m-b-5">Create New Application</h3>
+      <h4 class="mdl-color-text--amber-100 m-b-20 no-m-t w100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Aenan convallis.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Aenan convallis.</h4>
+    </div>
+  </div>
+
+  <div class="mdl-grid mdl-grid--no-spacing">
+
+    <div class="mdl-cell mdl-cell--3-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-color--grey-100">
+      <div class="p-40 p-r-20 p-20--small">
+        <div class=" mdl-color-text--blue-grey-400">
+          <h3><i class="material-icons f-left m-r-5">format_align_left</i> Connect</h3>
+          <p>An overview of basic.</p>
+          <div class="m-t-30">
+        <!--     <ul class="list-bordered">
+              <li>
+                 <a target="_blank" href="http://www.getmdl.io/components/index.html#textfields-section">
+                  <i class="material-icons m-r-5 f11">description</i>
+                  Text fields
+                </a> 
+              </li>
+              <li>
+                 <a target="_blank" href="http://www.getmdl.io/components/index.html#toggles-section">
+                  <i class="material-icons m-r-5 f11">description</i>
+                  Toggles
+                </a> 
+              </li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdl-cell mdl-cell--9-col mdl-cell--12-col-tablet mdl-cell--12-col-phone no-p-l">
+      <div class="p-20 ml-card-holder ml-card-holder-first">
+        <div class="mdl-card mdl-shadow--1dp">
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Connect Environment</h2>
+          </div>
+          <div class="p-30">
+            <form>
+              <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" pattern="^\s*[a-zA-Z0-9.-_]+@[a-zA-Z0-9.-_]+\.[a-zA-Z]{2,4}\s*$" id="sample1" />
+                <label class="mdl-textfield__label" for="sample1">Source VC</label>
+                <span class="mdl-textfield__error">Please supply a valid Source VC.</span>
+              </div>
+              <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="sample2" />
+                <label class="mdl-textfield__label" for="sample2">Target VC</label>
+              </div>
+					<!-- Select with floating label -->
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+							<input type="text" value="" class="mdl-textfield__input" id="sample3" readonly>
+							<input type="hidden" value="" name="sample3">
+							<label for="sample3" class="mdl-textfield__label">Platform</label>
+							<ul for="sample3" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+								<li class="mdl-menu__item" data-val="DEU">vm1</li>
+								<li class="mdl-menu__item" data-val="BLR">vm2</li>
+								<li class="mdl-menu__item" data-val="RUS">vm3</li>
+							</ul>
+						</div>
+			<div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="sample2" />
+                <label class="mdl-textfield__label" for="sample2">Source</label>
+             </div>
+			<div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="sample2" />
+                <label class="mdl-textfield__label" for="sample2">Target</label>
+            </div>
+			<div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" pattern="^\s*[a-zA-Z0-9.-_]+@[a-zA-Z0-9.-_]+\.[a-zA-Z]{2,4}\s*$" id="sample1" />
+                <label class="mdl-textfield__label" for="sample1">User</label>
+                <span class="mdl-textfield__error">Please supply a valid user name.</span>
+             </div>
+            <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="password" id="sample2" />
+                <label class="mdl-textfield__label" for="sample2">Password</label>
+            </div>
+<!--               <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="disabled1" disabled="disabled" />
+                <label class="mdl-textfield__label" for="disabled1">Disabled</label>
+              </div>
+              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+                <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" />
+                <span class="mdl-checkbox__label">Are you a robot?</span>
+              </label>
+              <div class="mdl-textfield mdl-js-textfield">
+                <textarea class="mdl-textfield__input" type="text" rows="4" id="sample5" ></textarea>
+                <label class="mdl-textfield__label" for="sample5">Textarea</label>
+              </div>
+              <p>Radio buttons</p>
+              <div>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+                  <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked />
+                  <span class="mdl-radio__label">Option one is this</span>
+                </label>
+              </div>
+              <div>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+                  <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="1" checked />
+                  <span class="mdl-radio__label">Option two can be something else</span>
+                </label>
+              </div>
+              <p class="m-t-10">Switches</p>
+              <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+                <input type="checkbox" id="switch-1" class="mdl-switch__input" checked />
+                <span class="mdl-switch__label">Off/On</span>
+                <span class="mdl-ripple hide" />
+              </label> -->
+              <div class="m-t-20">
+                <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+                  Connect
+                </button>
+                <button type="reset" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                  Reset
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdl-cell mdl-cell--3-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-color--grey-100 no-p-l">
+      <div class="p-40 p-r-20 p-20--small">
+        <div class=" mdl-color-text--blue-grey-400">
+          <h3><i class="material-icons f-left m-r-5">format_align_left</i> Select</h3>
+          <p>An overview of cluster selection.</p>
+          <div class="m-t-30">
+           <!--  <ul class="list-bordered">
+              <li>
+                <a target="_blank" href="http://www.getmdl.io/components/index.html#textfields-section">
+                  <i class="material-icons m-r-5 f11">description</i>
+                  Text fields
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="http://www.getmdl.io/components/index.html#toggles-section">
+                  <i class="material-icons m-r-5 f11">description</i>
+                  Toggles
+                </a>
+              </li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdl-cell mdl-cell--9-col mdl-cell--12-col-tablet mdl-cell--12-col-phone no-p-l">
+      <div class="p-20 ml-card-holder">
+        <div class="mdl-card mdl-shadow--1dp">
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Select Cluster</h2>
+          </div>
+          <div class="p-30">
+           <form>
+		   <!-- Simple Select -->
+			<div class="mdl-textfield mdl-js-textfield getmdl-select">
+				<p>Source</p>
+				<input type="text" value="" class="mdl-textfield__input" id="sample111" readonly>
+				<input type="hidden" value="" name="sample111">
+				<!-- <label for="sample111" class="mdl-textfield__label">Source</label> -->
+				<ul for="sample111" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+					<li class="mdl-menu__item" data-val="DEU">vm1</li>
+					<li class="mdl-menu__item" data-val="BLR">vm2</li>
+					<li class="mdl-menu__item" data-val="RUS">vm3</li>
+				</ul>
+			</div>
+			<!-- Simple Select -->
+			<div class="mdl-textfield mdl-js-textfield getmdl-select">
+				<p>Target</p>
+				<input type="text" value="" class="mdl-textfield__input" id="sample11" readonly>
+				<input type="hidden" value="" name="sample11">
+				<!-- <label for="sample11" class="mdl-textfield__label">Target</label> -->
+				<ul for="sample11" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+					<li class="mdl-menu__item" data-val="DEU">vm1</li>
+					<li class="mdl-menu__item" data-val="BLR">vm2</li>
+					<li class="mdl-menu__item" data-val="RUS">vm3</li>
+				</ul>
+			</div>
+<!--               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" pattern="^\s*[a-zA-Z0-9.-_]+@[a-zA-Z0-9.-_]+\.[a-zA-Z]{2,4}\s*$" id="sample1" />
+                <label class="mdl-textfield__label" for="sample1">Email</label>
+                <span class="mdl-textfield__error">Please supply a valid email address.</span>
+              </div>
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="password" id="sample2" />
+                <label class="mdl-textfield__label" for="sample2">Password</label>
+              </div>
+              <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="disabled2" disabled="disabled" />
+                <label class="mdl-textfield__label" for="disabled2">Disabled</label>
+              </div>
+              <label class="mdl-checkbox mdl-js-checkbox mdl-textfield--floating-label mdl-js-ripple-effect" for="checkbox-2">
+                <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" />
+                <span class="mdl-checkbox__label">Are you a robot?</span>
+              </label>
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <textarea class="mdl-textfield__input" type="text" rows="4" id="sample5" ></textarea>
+                <label class="mdl-textfield__label" for="sample5">Textarea</label>
+              </div>
+              <p>Radio buttons</p>
+              <div>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
+                  <input type="radio" id="option-3" class="mdl-radio__button" name="options" value="1" checked />
+                  <span class="mdl-radio__label">Option one is this</span>
+                </label>
+              </div>
+              <div>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-4">
+                  <input type="radio" id="option-4" class="mdl-radio__button" name="options" value="1" checked />
+                  <span class="mdl-radio__label">Option two can be something else</span>
+                </label>
+              </div>
+              <p class="m-t-10">Switches</p>
+              <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-2">
+                <input type="checkbox" id="switch-2" class="mdl-switch__input" checked />
+                <span class="mdl-switch__label">Off/On</span>
+                <span class="mdl-ripple hide" />
+              </label>
+              <div class="m-t-20">
+                <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+                  Save user
+                </button>
+                <button type="reset" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                  Reset
+                </button>
+              </div> -->
+            </form> 
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	
+	   <div class="mdl-cell mdl-cell--3-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-color--grey-100 no-p-l">
+      <div class="p-40 p-r-20 p-20--small">
+        <div class=" mdl-color-text--blue-grey-400">
+          <h3><i class="material-icons f-left m-r-5">format_align_left</i> VMs</h3>
+          <p>An overview of VM selection.</p>
+          <div class="m-t-30">
+           <!--  <ul class="list-bordered">
+              <li>
+                <a target="_blank" href="http://www.getmdl.io/components/index.html#textfields-section">
+                  <i class="material-icons m-r-5 f11">description</i>
+                  Text fields
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="http://www.getmdl.io/components/index.html#toggles-section">
+                  <i class="material-icons m-r-5 f11">description</i>
+                  Toggles
+                </a>
+              </li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdl-cell mdl-cell--9-col mdl-cell--12-col-tablet mdl-cell--12-col-phone no-p-l">
+      <div class="p-20 ml-card-holder">
+        <div class="mdl-card mdl-shadow--1dp">
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Select VMs</h2>
+          </div>
+          <div class="p-30">
+			<div class="demo-grid-1 mdl-grid p-10">
+				  <div class="mdl-cell--6-col">  
+				   <ul class="ml-list-actions">
+					<li>
+					<!--   <i class="material-icons">settings</i> -->
+					  <a href="">VM-1</a>
+					</li>
+					<li class="active">
+					 <!--  <i class="material-icons mdl-color-text--pink">favorite</i> -->
+					  <a href="">VM-2</a>
+					</li>
+					<li>
+					<!--   <i class="material-icons mdl-color-text--light-blue">place</i> -->
+					  <a href="">VM-4</a>
+					</li>
+					<li>
+					 <!--  <i class="material-icons">account_circle</i> -->
+					  <a href="">VM-7</a>
+					</li>
+				 </ul>
+				 </div>
+				   <div class="mdl-cell--6-col p-10">
+				              <form>
+								   <!-- Simple Select -->
+									<div class="mdl-textfield mdl-js-textfield getmdl-select">
+									<p>VMs</p>
+										<input type="text" value="" class="mdl-textfield__input" id="sample211" readonly>
+										<input type="hidden" value="" name="sample111">
+										<!-- <label for="sample211" class="mdl-textfield__label">VMs</label> -->
+										<ul for="sample211" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+											<li class="mdl-menu__item" data-val="DEU">VM-3</li>
+											<li class="mdl-menu__item" data-val="BLR">VM-4</li>
+											<li class="mdl-menu__item" data-val="RUS">VM-6</li>
+										</ul>
+									</div>
+									<!-- Simple Select -->
+									<div class="mdl-textfield mdl-js-textfield getmdl-select">
+									  <p>Delay</p>
+										<input type="text" value="" class="mdl-textfield__input" id="sample311" readonly>
+										<input type="hidden" value="" name="sample11">
+										<!-- <label for="sample311" class="mdl-textfield__label">Delay</label> -->
+										<ul for="sample311" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+											<li class="mdl-menu__item" data-val="DEU">0</li>
+											<li class="mdl-menu__item" data-val="BLR">15</li>
+											<li class="mdl-menu__item" data-val="RUS">30</li>
+										</ul>
+									</div>
+								</form>
+				   </div>
+		   </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	
+  <div class="mdl-cell mdl-cell--3-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-color--grey-100 no-p-l">
+      <div class="p-40 p-r-20 p-20--small">
+        <div class=" mdl-color-text--blue-grey-400">
+          <h3><i class="material-icons f-left m-r-5">format_align_left</i> Validations</h3>
+          <p>An overview of Application validations.</p>
+          <div class="m-t-30">
+           <!--  <ul class="list-bordered">
+              <li>
+                <a target="_blank" href="http://www.getmdl.io/components/index.html#textfields-section">
+                  <i class="material-icons m-r-5 f11">description</i>
+                  Text fields
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="http://www.getmdl.io/components/index.html#toggles-section">
+                  <i class="material-icons m-r-5 f11">description</i>
+                  Toggles
+                </a>
+              </li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdl-cell mdl-cell--9-col mdl-cell--12-col-tablet mdl-cell--12-col-phone no-p-l">
+      <div class="p-20 ml-card-holder">
+        <div class="mdl-card mdl-shadow--1dp">
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Validate Application</h2>
+          </div>
+          <div class="p-30">
+			<div class="demo-grid-1 mdl-grid p-10">
+				  <div class="mdl-cell--4-col"> 
+				  <p>Validation</p>
+				   <ul class="ml-list-actions">
+					<li>
+					<!--   <i class="material-icons">settings</i> -->
+					  <a href="">APP_Validation</a>
+					</li>
+					<li class="active">
+					 <!--  <i class="material-icons mdl-color-text--pink">favorite</i> -->
+					  <a href="">WEB_Validation</a>
+					</li>
+					<li>
+					<!--   <i class="material-icons mdl-color-text--light-blue">place</i> -->
+					  <a href="">DB_Validation</a>
+					</li>
+				 </ul>
+				 </div>
+				   <div class="mdl-cell--4-col p-10">
+				              <form>
+								   <!-- Simple Select -->
+									<div class="mdl-textfield mdl-js-textfield getmdl-select">
+									<p>VM</p>
+										<input type="text" value="" class="mdl-textfield__input" id="sample3111" readonly>
+										<input type="hidden" value="" name="sample111">
+										<!-- <label for="sample3111" class="mdl-textfield__label">VM</label> -->
+										<ul for="sample3111" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+											<li class="mdl-menu__item" data-val="DEU">VM-3</li>
+											<li class="mdl-menu__item" data-val="BLR">VM-4</li>
+											<li class="mdl-menu__item" data-val="RUS">VM-6</li>
+										</ul>
+									</div>
+									<div class="mdl-textfield mdl-js-textfield">
+									<p>User</p>
+										<input class="mdl-textfield__input" type="text" pattern="^\s*[a-zA-Z0-9.-_]+@[a-zA-Z0-9.-_]+\.[a-zA-Z]{2,4}\s*$" id="sample31" />
+										<!-- <label class="mdl-textfield__label" for="sample31">User</label> -->
+										<span class="mdl-textfield__error">Please supply a valid user name.</span>
+									  </div>
+									  <div class="mdl-textfield mdl-js-textfield">
+									  <p>Password</p>
+										<input class="mdl-textfield__input" type="password" id="sample32" />
+										<!-- <label class="mdl-textfield__label" for="sample32">Password</label> -->
+									  </div>
+									 <div class="mdl-textfield mdl-js-textfield">
+									 <p>Script</p>
+										<textarea class="mdl-textfield__input" type="text" rows="4" id="sample5" placeholder="Script here..."></textarea>
+									 </div>
+								</form>
+				   </div>
+				   
+				    <div class="mdl-cell--4-col p-10">
+				              <form>
+									<div class="mdl-textfield mdl-js-textfield">
+									<p>Result if UP</p>
+										<textarea class="mdl-textfield__input" type="text" rows="4" id="sample5"></textarea>
+									 </div>
+									<div class="mdl-textfield mdl-js-textfield">
+										<p>Validation Name</p>
+										<input class="mdl-textfield__input" type="password" id="sample32" />
+										<!-- <label class="mdl-textfield__label" for="sample32">Validation Name</label> -->
+									 </div>
+									 <div class="m-t-20">
+										<button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+										  Add Validation
+										</button>										
+									  </div>
+								</form>
+				   </div>
+		   </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	
+	  <div class="mdl-cell mdl-cell--3-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-color--grey-100 no-p-l">
+      <div class="p-40 p-r-20 p-20--small">
+        <div class=" mdl-color-text--blue-grey-400">
+          <h3><i class="material-icons f-left m-r-5">format_align_left</i> Create</h3>
+          <p>An overview of VM creation</p>
+          <div class="m-t-30">
+           <!--  <ul class="list-bordered">
+              <li>
+                <a target="_blank" href="http://www.getmdl.io/components/index.html#textfields-section">
+                  <i class="material-icons m-r-5 f11">description</i>
+                  Text fields
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="http://www.getmdl.io/components/index.html#toggles-section">
+                  <i class="material-icons m-r-5 f11">description</i>
+                  Toggles
+                </a>
+              </li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdl-cell mdl-cell--9-col mdl-cell--12-col-tablet mdl-cell--12-col-phone no-p-l">
+      <div class="p-20 ml-card-holder">
+        <div class="mdl-card mdl-shadow--1dp">
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Create App</h2>
+          </div>
+          <div class="p-30">
+            <form>
+			<div class="mdl-textfield mdl-js-textfield">
+				<p>App Name</p>
+                <input class="mdl-textfield__input" type="text" id="sample2" />
+                <!-- <label class="mdl-textfield__label" for="sample2">Name</label> -->
+             </div>
+			  <div class="mdl-textfield mdl-js-textfield">
+				<p>App Description</p>
+                <textarea class="mdl-textfield__input" type="text" rows="4" id="sample5" ></textarea>
+                <!-- <label class="mdl-textfield__label" for="sample5">Description</label> -->
+              </div>
+
+              <div class="m-t-20">
+                <a type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect" href="#/dashboard">
+                  Create
+                </a>
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	
+
+  </div>  
+</section>

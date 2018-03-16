@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Redirect To/ VM2020 | Metapercept </title>
+  
+  
+  
+<!--       <link rel="stylesheet" href="css/style.css"> -->
+		<style>
+
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+
+body {
+  background-color: #f6f6f6;
+  font-size: 24px;
+  font-family: 'Montserrat', Helvetica Neue, Helvetica, sans-serif;
+}
+
+p {
+  text-align: center;
+  margin: 20em;
+  color: #2b2b2b;
+}
+		</style>
+  
+</head>
+
+<body>
+
+  <p>You will be redirected in <time><strong id="seconds">3</strong> seconds</time>.</p>
+  <img style="  position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-40%, -50%);" src="src/img/VM2020_logo.svg" width="100px"/>
+  
+
+    <script>var el = document.getElementById('seconds'),
+    total = el.innerHTML,
+    timeinterval = setInterval(function () {
+        total = --total;
+        window.requestAnimationFrame(function () {
+            el.textContent = total;
+            if (total <= 0) {
+                clearInterval(timeinterval);
+                 window.location = 'src/index.html';
+            }
+        });
+    }, 1000);</script>
+
+
+
+
+</body>
+
+</html>
